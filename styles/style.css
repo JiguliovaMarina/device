@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  width: 1160px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 20px 60px 0;
+  background-color: #ffe17f;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 40px;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.logo-link {
+  position: relative;
+  z-index: 5;
+  color: #000000;
+  display: inline-block;
+  margin-bottom: 26px;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:focus {
+  opacity: 1;
+  outline: 2px solid #af4fff;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+  outline: none;
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.search-input {
+  min-height: 40px;
+  width: 357px;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  border-right: none;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  box-sizing: border-box;
+  padding: 0 13px 0 47px;
+  font-family: "Rubik", "Arial", sans-serif;
+  background: transparent url("../images/search.svg") no-repeat 14px 10px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input:disabled {
+  opacity: 0.3;
+}
+
+.search-label {
+  display: block;
+  position: relative;
+}
+
+.search-label::before {
+  content: "";
+  width: 363px;
+  height: calc(100% + 4px);
+  border: 2px solid #af4fff;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  display: none;
+}
+
+.search-label:focus-within::before {
+  display: block;
+}
+
+.search-button {
+  border: 2px solid #000000;
+  border-radius: 0 50px 50px 0;
+  background-color: transparent;
+  min-height: 40px;
+  width: 160px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  font-family: "Rubik", "Arial", sans-serif;
+  position: relative;
+}
+
+.search-button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.search-button::before {
+  content: "";
+  position: absolute;
+  width: 164px;
+  height: calc(100% + 8px);
+  border: 2px solid #af4fff;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  display: none;
+}
+
+.search-button:focus::before {
+  display: block;
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+.search-button:active {
+  background-color: #000000;
+  color: rgba( 255, 255, 255, 0.3);
+}
+
+.search-button:disabled {
+  opacity: 0.3;
+  background-color: transparent;
+  color: #000000;
+}
+
+.user-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-end;
+  width: 248px;
+  padding: 0;
+  margin: 0;
+  gap: 6px 32px;
+}
+
+.user-group {
+  width: 250px;
+}
+
+.user-link {
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  padding: 5px 0 0 29px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  position: relative;
+}
+
+.user-link:hover {
+  opacity: 0.6;
+}
+
+.user-link:focus{
+  outline: 2px solid #af4fff;
+  opacity: 1;
+}
+
+.user-link:active{
+  opacity: 0.3;
+  outline: none;
+}
+
+.login {
+  background: url("../images/login.svg") no-repeat 2px 14px;
+}
+
+.graphic {
+  background: url("../images/graphic.svg") no-repeat 7px 14px;
+}
+
+.cart {
+  background: url("../images/cart.svg") no-repeat 1px 11px;
+}
+
+.cart-container {
+  display: none;
+}
+
+.cart-count {
+  position: absolute;
+  left: -14px;
+  top: 9px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 3px;
+  border-radius: 10px;
+  min-width: 21px;
+  height: 21px;
+  box-sizing: border-box;
+}

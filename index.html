@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Device</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo-link" href="index.html">
+      <img src="images/logo.svg" alt="Логотип магазина гаджетов." width="145" height="36">
+    </a>
+    <div class="container-header">
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="search-label">
+          <input class="search-input" type="text" placeholder="Поиск по сайту">
+        </label>
+        <button class="search-button" type="submit">Найти</button>
+      </form>
+      <div class="user-block">
+        <div class="user-group">
+          <a href="#" class="user-link login">Войти</a>
+        </div>
+        <ul class="user-menu">
+          <li class="user-item">
+            <a href="#" class="user-link graphic">Сравнить</a>
+          </li>
+          <li class="user-item cart">
+            <a href="#" class="user-link cart">
+              <span class="cart-count">2</span>
+              Корзина
+            </a>
+            <div class="cart-container">
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a href="#" class="cart-link">
+                    <img src="images/product-1-sm.jpg" alt="Любительская селфи-палка." class="cart-img" width="39"
+                      height="43">
+                    <p class="cart-title">Любительская селфи-палка</p>
+                  </a>
+                  <button class="cart-button-remove" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a href="#" class="cart-link">
+                    <img src="images/product-2-sm.jpg" alt="Профессиональная селфи-палка." class="cart-img" width="39"
+                      height="43">
+                    <p class="cart-title">Профессиональная селфи-палка</p>
+                  </a>
+                  <button class="cart-button-remove" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины.</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-statistic">
+                <p class="cart-total">Товаров: 2</p>
+                <p class="cart-total">Сумма: 2000 ₽</p>
+              </div>
+              <a class="cart-open-link" href="#">Открыть корзину</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main"></main>
+  <footer class="footer"></footer>
+</body>
+
+</html>
